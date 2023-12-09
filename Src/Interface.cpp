@@ -3,6 +3,7 @@
 //
 #include "../Include/Interface.h"
 #include "iostream"
+
 void Interface::displayMenu() {
     std::cout << std::endl;
     std::cout << "<--------------------------------------->\n";
@@ -14,11 +15,13 @@ void Interface::displayMenu() {
     std::cout << "<--------------------------------------->\n";
 }
 
+
 void Interface::displayItemFrequency(const std::string& item, int frequency) {
     std::string time;
     time = frequency > 1 || frequency == 0 ? " times" : " time";
     std::cout << item << " appears " << frequency << time << ".\n";
 }
+
 
 void Interface::displayAllItems(const std::map<std::string, int>& frequencies) {
     std::cout << "Displaying all items: \n";
@@ -26,6 +29,7 @@ void Interface::displayAllItems(const std::map<std::string, int>& frequencies) {
         std::cout << i.first << " " << i.second << std::endl;
     }
 }
+
 
 void Interface::displayHistogram(const std::map<std::string, int>& frequencies) {
     std::cout << "Displaying histogram...\n";

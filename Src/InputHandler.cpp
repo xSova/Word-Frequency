@@ -4,6 +4,7 @@
 #include "../Include/InputHandler.h"
 #include "iostream"
 
+
 std::string InputHandler::getStringInput(const std::string& prompt) {
     std::string value;
     bool validInput = false;
@@ -21,6 +22,7 @@ std::string InputHandler::getStringInput(const std::string& prompt) {
 
     return value;
 }
+
 
 int InputHandler::getIntegerInput(const std::string& prompt) {
     int value;

@@ -3,13 +3,16 @@
 //
 #include "../Include/ItemTracker.h"
 
+
 std::map<std::string, int> ItemTracker::getAllFrequencies() {
     return itemFrequencies;
 }
 
+
 int ItemTracker::getItemFrequency(const std::string& item) {
     return itemFrequencies.at(item);
 }
+
 
 void ItemTracker::addItem(const std::string& item) {
     if (itemFrequencies.count(item) > 0) {

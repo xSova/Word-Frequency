@@ -5,6 +5,7 @@
 #include "iostream"
 #include "fstream"
 
+
 void FileWriter::writeOutputFile(const std::string& fileName, const std::map<std::string, int>& frequencies) {
     std::ofstream outputStream;
 

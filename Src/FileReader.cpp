@@ -8,6 +8,7 @@
 #include "iostream"
 #include "fstream"
 
+
 bool FileReader::readInputFile(const std::string& fileName, ItemTracker& tracker) {
     std::ifstream inputStream; // Create input stream
     std::string word;
